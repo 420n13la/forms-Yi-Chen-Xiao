@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Registration</legend>
+			<label for="Username">Username</label>
+			<input type="text" name="Username" placeholder="Enter your full name">
+			<select>
+				<option value="Student">Student</option>
+				<option value="idk">idk</option>
+			</select>
+			<label for="email">E-mail</label>
+			<input type="text" name="email">
+			<br>
+			<br>
+			<label for="telephone">Phone</label>
+			<input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="514-555-5555">
+			<label for="url">Website</label>
+			<input type="url" id="url" name="url" placeholder="http://">
+			<label for="about">About</label>
+			<textarea></textarea>
+			<label for="cities">Cities you visited</label>
+			<select>
+				<option value="London">London</option>
+				<option value="Montreal">Montreal</option>
+				<option value="New York">New York</option>
+				<option value="Paris">Paris</option>
+			</select>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="*********">
+			<label for="conpassword">Confirm Password</label>
+			<input type="conpassword" id="conpassword" name="conpassword" placeholder="*********">
+			<input type="submit" id="submit" name="submit">
+			<input type="reset" id="reset" name="reset" value="Clear">
+		</fieldset>
+		<fieldset>
+			<legend>Search the Site</legend>
+			<input type="text" id="search" name="search">
+			<input type="submit" value="Search">
+		</fieldset>
+		<fieldset>
+			<legend>Options</legend>
+			<label for="flavour">Choose your flavour: </label>
+			<input list="flavours" id="flavours" name="flavours">
+			<datalist id="flavours">
+				<option value="Chocolate">
+				<option value="Coconut">
+				<option value="Mint">
+				<option value="Strawberry">
+				<option value="Vanilla">
+			</datalist>
+		</fieldset>
+		<fieldset>
+			<legend>Sex</legend>
+			<input type="radio" id="Male" name="Sex">
+			<label for="Male">Male</label><br/>
+			<input type="radio" id="Female" name="Sex">
+			<label for="Female">Female</label><br>
+		</fieldset>
+		<fieldset>
+			<legend>Languages</legend>
+			<input type="checkbox" name="langfr" id="langfr">I speak French<br>
+			<input type="checkbox" name="langen" id="langen">I speak English<br>
+			<input type="checkbox" name="langes" id="langes">I speak Spanish<br>
+		</fieldset>
+		<fieldset>
+			<legend>Photo</legend>
+			<label for="image">File: </label>
+			<input type="text"><br>
+			<input type="image" name="img" id="img" src="http://bmlabca.com/uxwid/form/images/upload.png">
+		</fieldset>
+	</form>
+</body>
+</html>
